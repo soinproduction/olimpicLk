@@ -1,0 +1,46 @@
+
+.submit-btn:hover {
+  border: 2px solid #01499B;
+  background: transparent;
+  color: $color-text--blue;
+}
+
+
+
+.main-btn:hover,
+.modal__btn:hover,
+.modal__btns:hover {
+  background: #fff ;
+  border: 1px solid #01499B;
+  color: #01499B;
+}
+
+.forgot-link:hover {
+  color: #01499B;
+}
+
+
+.test-box__submit:hover {
+  background: #fff ;
+  border: 1px solid #01499B;
+  color: #01499B;
+
+  .span-single {
+    color: #01499B;
+  }
+
+  .span-all {
+    color: #808080;
+  }
+}
+
+.next-q:hover {
+  text-decoration: underline;
+}
+
+.modal__btns--rev:hover {
+  background: #01499B;
+  color: #fff;
+}
+
+

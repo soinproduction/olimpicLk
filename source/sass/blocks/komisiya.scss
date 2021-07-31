@@ -1,0 +1,21 @@
+.part-item__top h2 {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: $color-text;
+}
+
+.part-item__bottom li {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-text;
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

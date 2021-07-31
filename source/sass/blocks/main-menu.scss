@@ -1,0 +1,145 @@
+
+.main-menu,
+.sub-menu {
+  position: absolute;
+  top: 68px;
+  right: 0;
+  left: 0;
+  z-index: -100;
+
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 100vw;
+  max-height: 475px;
+  margin-top: 0;
+  padding-top: 0;
+
+  background-color: #344050;
+  opacity: 0;
+
+  transition: 0.2s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: 0;
+    left: 0;
+
+    height: 50px;
+
+    background-color: transparent;
+  }
+}
+
+
+.nav-list .sub-menu > li:hover a {
+  color: #344050;
+
+  background-color: #f4f4f4;
+}
+
+.nav-list > li:hover > a {
+  text-decoration: underline;
+}
+
+.nav-list > li {
+  position: relative;
+}
+
+.nav-list > li.menu-item-has-children:hover {
+  .sub-menu {
+    z-index: 500;
+
+    display: flex;
+
+    opacity: 1;
+  }
+}
+
+.nav-list > li a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  font-family: $font-family;
+  color: $color-text--rev;
+  text-transform: uppercase;
+}
+
+.nav-list .sub-menu li a {
+  display: flex;
+  align-items: center;
+  width: 370px;
+  min-height: 75px;
+  padding: 0 10px;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-family: $font-family;
+  color: $color-text--rev;
+  text-transform: uppercase;
+}
+
+.nav-list > li.current-menu-item > a {
+  text-decoration: underline;
+}
+
+.sub-menu > li.current-menu-item a {
+  text-decoration: none;
+}
+
+
+.nav-list__item:hover {
+  .main-menu {
+    z-index: 500;
+
+    display: block;
+
+    opacity: 1;
+  }
+}
+
+.main-menu__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  max-height: 475px;
+
+  background-color: #344050;
+}
+
+.main-menu__wrap {
+  position: relative;
+}
+
+.main-menu__item {
+  width: fit-content;
+  margin-right: 50px;
+}
+
+.main-menu__link {
+  display: flex;
+  align-items: center;
+  width: 370px;
+  min-height: 75px;
+  padding: 0 10px;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-family: $font-family;
+  color: $color-text--rev;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #344050;
+
+    background-color: #f4f4f4;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}

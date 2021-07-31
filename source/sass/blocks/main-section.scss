@@ -1,0 +1,164 @@
+.main-section {
+  padding: 0 32px 46px 20px;
+  margin-top: 20px;
+}
+
+.entry-box {
+  max-width: 430px;
+  margin: 0 auto;
+
+  h2 {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: $color-header;
+    margin-bottom: 58px;
+  }
+}
+
+.regestration-sec {
+  max-width: 980px;
+  margin: 20px auto 30px;
+  padding: 0 0 100px;
+
+}
+
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  fieldset {
+    padding: 0;
+    border: none;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  legend {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 8px;
+  }
+
+
+  input {
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 0 15px;
+
+    &::placeholder {
+      font-family: $font-family--lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+.main-btn {
+  background: $bg--hover-item;
+  color: $color-text--rev;
+  width: 150px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family--lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.main-form__btn {
+  margin-bottom: 30px;
+}
+
+.forgot-link {
+  font-family: $font-family--lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration-line: underline;
+  color: $color-text;
+
+  &:not(:first-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.mb-sec {
+  margin-bottom: 146px;
+  padding-bottom: 26px;
+}
+
+.forgot-sec {
+  max-width: 980px;
+  margin: 20px auto;
+}
+
+.forgot-sec__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 846px;
+  margin: 0 auto;
+  min-height: 396px;
+}
+
+.forgot-sec__title {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: $color-text;
+}
+
+.forgot-sec__text {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: $color-text;
+}
+
+.index-form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.index-form__box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  fieldset {
+    width: 47%;
+  }
+}
+
+.main-form__wrapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 47%;
+
+  .forgot-link:not(:first-child) {
+    margin: 0;
+  }
+}

@@ -1,0 +1,140 @@
+.big-form {
+  //
+  margin-left: 80px;
+}
+
+
+.long-form {
+  align-items: flex-start;
+  width: 100%;
+  input + input {
+    margin-top: 30px;
+  }
+
+}
+
+.long-form__wrapp {
+  max-width: 420px;
+}
+
+.long-form__title {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: $color-text;
+  padding-bottom: 10px;
+  width: 100%;
+  margin-bottom: 29px;
+
+  position: relative;
+
+  &::before {
+    background: linear-gradient(90deg, #E63025 0.76%, #01499B 65.9%, rgba(1, 73, 155, 0.03) 98.73%);
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    content: '';
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.checkbox-wrapp {
+  display:flex;
+  align-items: center;
+
+  .radio + .radio {
+    margin-left: 47px;
+  }
+  .radio {
+    position: relative;
+  }
+}
+
+.select-wrapp--day {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 15px;
+}
+
+.select-big .nice-select {
+  width: 100%;
+  height: 50px;
+  border-radius: 0;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+
+  span {
+    font-family: $font-family--lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: $color-text;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .list {
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    max-height: 250px;
+    overflow-y: scroll;
+  }
+
+  &:after {
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 14L.7 8.7h8.6L5 14zM5 0l4.3 5.3H.7L5 0z' fill='%23000'/%3E%3C/svg%3E");
+    height: 14px;
+    width: 10px;
+    border: none;
+    background-repeat: no-repeat;
+    transform: translateY(-30%);
+  }
+}
+
+.checkbox-wrapp--big {
+  justify-content: space-between;
+
+  .radio + .radio {
+    margin-left: 0;
+  }
+}
+
+.pas-descr {
+  font-family: $font-family--lato;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: lowercase;
+  margin-bottom: 7px;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+
+.license-box {
+  margin-bottom: 30px;
+
+  .checkbox + .checkbox {
+    margin-top: 30px;
+  }
+}
+
+.count {
+  font-family: $font-family--lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #F5483A;
+}

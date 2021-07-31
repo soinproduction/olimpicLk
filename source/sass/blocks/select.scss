@@ -1,0 +1,45 @@
+select {
+  display: none;
+}
+
+.select-wrapp .nice-select {
+  width: 124px;
+  height: 50px;
+  border-radius: 0;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+
+  span {
+    font-family: $font-family--lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: $color-text;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .list {
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    max-height: 250px;
+    overflow-y: scroll;
+  }
+
+  &:after {
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 6.8L.8.2h10.4L6 6.7z' fill='%23000'/%3E%3C/svg%3E%0A");
+    height: 9px;
+    width: 12px;
+    border: none;
+    background-repeat: no-repeat;
+    //
+  }
+
+  .open:after {
+    transform: scaleY(-1) !important;
+  }
+}
+

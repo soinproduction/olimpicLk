@@ -1,0 +1,30 @@
+.about {
+  margin-bottom: 25px;
+}
+
+.about__descr {
+  padding: 16px 40px;
+}
+
+.about__text {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-text;
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+.about__link {
+  text-decoration-line: underline;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-text;
+}
