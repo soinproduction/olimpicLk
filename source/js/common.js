@@ -24,6 +24,23 @@ jQuery(function ($) {
 
   $('select').niceSelect();
 
+
+
+  $("#tab3").on( "click", function() {
+    if($(this).is(":checked")) {
+      $(".check-tab").addClass("check-tab--active");
+    } else {
+      $(".check-tab").removeClass("check-tab--active");
+    }
+  });
+
+  $("#tab1 ,#tab2").on( "click", function() {
+    if($(this).is(":checked")) {
+      $(".check-tab").removeClass("check-tab--active");
+    }
+  });
+
+
   const Sliders = {
     NEW_SLIDER: {
       ELEMENT: $(".news-article__images"),
